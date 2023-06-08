@@ -14,9 +14,7 @@
 </head>
 <body>
 
-<livewire:header/>
-
-@yield('content')
+{{ $slot }}
 
 <livewire:scripts/>
 </body>
