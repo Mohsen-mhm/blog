@@ -28,7 +28,7 @@
                         <img class="w-10 h-10 rounded-full" src="storage/avatar/{{ $user->avatar }}"
                              alt="user photo">
                     @else
-                        <img class="w-10 h-10 rounded-full" src="/images/default-avatar.webp"
+                        <img class="w-10 h-10 rounded-full" src="/images/default-avatar.png"
                              alt="user photo">
                     @endif
                 </button>
@@ -54,12 +54,7 @@
                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
                         </li>
                         <li>
-                            <a href="{{ route('logout') }}"
-                               onclick="event.preventDefault(); document.querySelector('#logout-form').submit()"
-                               class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                out</a>
-                            <form id="logout-form" class="hidden" method="POST"
-                                  action="{{ route('logout') }}">@csrf</form>
+                            <livewire:auth.logout/>
                         </li>
                     </ul>
                 </div>
