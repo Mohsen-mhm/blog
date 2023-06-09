@@ -2,16 +2,43 @@
 
 namespace App\Http\Livewire\Auth;
 
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class Login extends Component
 {
-    public $email;
-    public $password;
+    public $user;
+
+    protected $rules = [
+        'user.email' => ['required', 'email'],
+        'user.password' => ['required', 'min:8'],
+        'user.remember' => ['nullable'],
+    ];
+
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
+    }
 
     public function login()
     {
-        dd($this->email, $this->password);
+        $this->validate();
+
+        $remember = $this->user['remember'] ?? false;
+
+        $credentials = [
+            'email' => $this->user['email'],
+            'password' => $this->user['password'],
+        ];
+
+        if (Auth::attempt($credentials, $remember)) {
+            // Authentication success
+            return redirect()->route('home');
+        }
+        // Authentication failed
+        $this->addError('user.email', 'Invalid email or password.');
+        $this->addError('user.password', 'Invalid email or password.');
     }
 
     public function render()

@@ -23,9 +23,9 @@ class Register extends Component
         'user.password_confirmation' => ['required', 'same:user.password'],
     ];
 
-    public function updated($properties)
+    public function updated($propertyName)
     {
-        $this->validateOnly($properties);
+        $this->validateOnly($propertyName);
     }
 
     public function register()
