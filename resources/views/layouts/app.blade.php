@@ -18,6 +18,8 @@
 
 {{ $slot }}
 
+<livewire:layouts.footer/>
+
 <livewire:scripts/>
 </body>
 </html>

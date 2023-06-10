@@ -1,3 +1,1 @@
-<div>
-    hello
-</div>
+<livewire:layouts.hero/>
