@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Persian */
+@font-face {
+    font-family: 'Vazir';
+    src: url("/vendor/fonts/Vazir.ttf");
+}
+
+* {
+    font-family: 'Vazir';
+}
+
 /* Change the width and height of the scroll bar track */
 ::-webkit-scrollbar {
     width: 5px;
