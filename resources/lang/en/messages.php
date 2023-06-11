@@ -1,9 +1,20 @@
 <?php
 return [
+    "learn.asan" => "Learn Asan",
     "login" => "Sign in",
+    "login.to.account" => "Sign in to your account",
     "register" => "Sign up",
+    "register.account" => "Create an account",
     "dashboard" => "Dashboard",
     "home" => "Home",
     "english" => "English",
     "persian" => "Persian",
+    "name" => "Name",
+    "email" => "Email",
+    "password" => "Password",
+    "password.confirm" => "Confirm password",
+    "remember" => "Remember me",
+    "dont.have.account" => "Don’t have an account yet?",
+    "have.account" => "Already have an account?",
+    "accept.terms" => "I accept the Terms and Conditions",
 ];

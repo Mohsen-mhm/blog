@@ -1,9 +1,20 @@
 <?php
 return [
+    "learn.asan" => "لرن آسان",
     "login" => "ورود",
+    "login.to.account" => "به حساب خود وارد شوید",
     "register" => "عضویت",
+    "register.account" => "ایجاد حساب کاربری",
     "dashboard" => "داشبورد",
     "home" => "خانه",
     "english" => "انگلیسی",
     "persian" => "فارسی",
+    "name" => "نام",
+    "email" => "ایمیل",
+    "password" => "رمز عبور",
+    "password.confirm" => "تکرار رمز عبور",
+    "remember" => "من را به خاطر بسپار",
+    "dont.have.account" => "حساب کاربری ندارید؟",
+    "have.account" => "از قبل حساب کاربری دارید؟",
+    "accept.terms" => "قوانین و مقررات را می پذیرم",
 ];

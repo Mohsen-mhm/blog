@@ -3,7 +3,7 @@
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="https://flowbite.com" class="flex items-center">
-                    <img src="/images/logo.png" class="mr-3 h-12" alt="Learn Asan"/>
+                    <img src="/images/logo.svg" class="mr-3 h-12" alt="Learn Asan"/>
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
