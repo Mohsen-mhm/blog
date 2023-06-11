@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body>
-
+<body @if(app()->getLocale() == "fa") dir="rtl" @else dir="ltr" @endif>
 <livewire:layouts.header/>
 
 {{ $slot }}

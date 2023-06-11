@@ -1,6 +1,6 @@
 <section class="bg-gray-50 dark:bg-gray-900">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <a href="{{ route('home') }}"
+        <a href="{{ route('home', app()->getLocale()) }}"
            class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
             <img class="h-16 mr-2" src="/images/logo.png" alt="logo">
         </a>
@@ -45,7 +45,7 @@
                     </button>
                     @if(\Illuminate\Support\Facades\Route::has('register'))
                         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                            Don’t have an account yet? <a href="{{ route('register') }}"
+                            Don’t have an account yet? <a href="{{ route('register', app()->getLocale()) }}"
                                                           class="font-medium text-purple-600 hover:underline dark:text-purple-500">Sign
                                 up</a>
                         </p>

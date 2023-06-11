@@ -4,4 +4,6 @@ return [
     "register" => "عضویت",
     "dashboard" => "داشبورد",
     "home" => "خانه",
+    "english" => "انگلیسی",
+    "persian" => "فارسی",
 ];
