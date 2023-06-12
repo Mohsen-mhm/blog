@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body @if(app()->getLocale() == "fa") dir="rtl" @else dir="ltr" @endif>
+<body @if(app()->getLocale() == "fa") dir="rtl" @else dir="ltr"
+      @endif class="{{ (Auth::check() && Auth::user()->theme_mode === 'dark') || (!Auth::check() && session('theme_mode') === 'dark') ? 'dark' : '' }}">
+
 <livewire:layouts.header/>
 
 {{ $slot }}
@@ -22,5 +24,17 @@
 <livewire:layouts.footer/>
 
 <livewire:scripts/>
+<!-- Additional Scripts -->
+<script>
+    document.addEventListener('livewire:load', function () {
+        Livewire.on('themeToggled', mode => {
+            if (mode === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+    });
+</script>
 </body>
 </html>
