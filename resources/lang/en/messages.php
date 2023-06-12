@@ -1,5 +1,6 @@
 <?php
 return [
+    "test" => "test",
     "learn.asan" => "Learn Asan",
     "login" => "Sign in",
     "login.to.account" => "Sign in to your account",

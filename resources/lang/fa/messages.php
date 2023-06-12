@@ -1,5 +1,6 @@
 <?php
 return [
+    "test" => "تست",
     "learn.asan" => "لرن آسان",
     "login" => "ورود",
     "login.to.account" => "به حساب خود وارد شوید",
