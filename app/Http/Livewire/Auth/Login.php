@@ -34,7 +34,7 @@ class Login extends Component
 
         if (Auth::attempt($credentials, $remember)) {
             // Authentication success
-            return redirect()->route('home');
+            return redirect()->route('home', app()->getLocale());
         }
         // Authentication failed
         $this->addError('user.email', 'Invalid email or password.');

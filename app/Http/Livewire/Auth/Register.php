@@ -37,7 +37,7 @@ class Register extends Component
         $this->user->save();
 
         Auth::login($this->user, true);
-        return redirect()->route('home');
+        return redirect()->route('home', app()->getLocale());
     }
 
     public function render()
