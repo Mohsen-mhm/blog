@@ -15,7 +15,7 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body @if(app()->getLocale() == "fa") dir="rtl" @else dir="ltr"
-      @endif class="{{ (Auth::check() && Auth::user()->theme_mode === 'dark') || (!Auth::check() && session('theme_mode') === 'dark') ? 'dark' : '' }}">
+      @endif class="{{ (Auth::check() && Auth::user()->theme_mode === 'dark') || (!Auth::check() && \Illuminate\Support\Facades\Session::get('theme_mode') === 'dark') ? 'dark' : '' }}">
 
 <livewire:layouts.header/>
 
