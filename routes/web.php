@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/', function () {
+    return redirect()->route('home', 'fa');
+});
+
 Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () {
 
     Route::get('/', \App\Http\Livewire\Home::class)->name('home');
