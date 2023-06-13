@@ -24,5 +24,7 @@ Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () 
     Route::get('login', \App\Http\Livewire\Auth\Login::class)->name('login');
     Route::get('register', \App\Http\Livewire\Auth\Register::class)->name('register');
 
+    Route::get('dashboard', \App\Http\Livewire\Dashboard\Index::class)->name('dashboard.home');
+
     Route::post('logout')->name('logout');
 });

@@ -18,4 +18,6 @@ return [
     "dont.have.account" => "Don’t have an account yet?",
     "have.account" => "Already have an account?",
     "accept.terms" => "I accept the Terms and Conditions",
+    "newsletters" => "Find out about the latest posts and changes",
+    "newsletters.join" => "Subscribe to the site's newsletter",
 ];
