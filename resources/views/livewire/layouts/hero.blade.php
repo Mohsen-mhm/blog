@@ -1,17 +1,17 @@
 <section class="bg-white dark:bg-gray-900">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div
-            class="w-full lg:col-span-7 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            class="w-full lg:col-span-7 bg-white rounded-3xl shadow dark:bg-gray-800">
             <a href="#" class="relative text-center transition">
-                <img class="p-2 rounded-t-lg transition" src="/images/img.png" alt="post image"/>
-                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 hover:to-gray-900 transition rounded-lg"></div>
+                <img class="rounded-3xl transition" src="/images/img.png" alt="post image"/>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 hover:to-gray-900 dark:to-gray-400 dark:hover:to-gray-300 transition rounded-2xl"></div>
                 <div class="px-5 pb-5 absolute" style="transform: translateY(-100px)">
                     <a href="#">
-                        <h5 class="text-lg font-semibold tracking-tight truncate text-white dark:text-white">Apple Watch
-                            Series 7 GPS, Aluminium Case, Starlight Sport, Starlight Sport, Starlight Sport</h5>
+                        <h5 class="text-lg font-semibold tracking-tight truncate text-white dark:text-gray-900">Apple Watch
+                            Series 7 GPS, Aluminium Case, Starlight Sport</h5>
                     </a>
                     <div class="flex items-center justify-between mt-3">
-                        <span class="text-lg font-bold text-white dark:text-white"><i class="fa-solid fa-tag fa-lg text-yellow-300"></i>$599</span>
+                        <span class="text-lg font-bold text-white dark:text-gray-900"><i class="fa-solid fa-tag fa-lg text-yellow-300 mx-2"></i>$599</span>
                     </div>
                 </div>
             </a>
@@ -35,7 +35,7 @@
                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                         </svg>
                     </div>
-                    <input type="email" id="default-email"
+                    <input type="email" id="default-email" dir="ltr"
                            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500"
                            required>
                     <button type="submit"
