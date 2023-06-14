@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->id();
 
             $table->string('name');
+            $table->string('username');
 
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -22,7 +23,6 @@ return new class extends Migration {
             $table->enum('role', ['superuser', 'admin', 'user'])->default('user');
 
             $table->string('password');
-            $table->string('theme_mode')->default('light');
 
             $table->rememberToken();
 
