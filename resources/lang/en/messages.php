@@ -11,6 +11,7 @@ return [
     "english" => "English",
     "persian" => "Persian",
     "name" => "Name",
+    "username" => "Username",
     "email" => "Email",
     "password" => "Password",
     "password.confirm" => "Confirm password",

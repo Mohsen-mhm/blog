@@ -11,6 +11,7 @@ return [
     "english" => "انگلیسی",
     "persian" => "فارسی",
     "name" => "نام",
+    "username" => "نام کاربری",
     "email" => "ایمیل",
     "password" => "رمز عبور",
     "password.confirm" => "تکرار رمز عبور",
