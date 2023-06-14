@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body @if(app()->getLocale() == "fa") dir="rtl" @else dir="ltr"
-      @endif class="{{ (Auth::check() && Auth::user()->theme_mode === 'dark') || (!Auth::check() && \Illuminate\Support\Facades\Session::get('theme_mode') === 'dark') ? 'dark' : '' }}">
+<body @if(app()->getLocale() == "fa") dir="rtl" @else dir="ltr" @endif>
 
 <livewire:layouts.header/>
 

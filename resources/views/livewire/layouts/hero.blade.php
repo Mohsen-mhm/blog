@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    <div class="flex items-center justify-center w-full mb-10">
+    <div class="flex items-center justify-center w-full pb-10">
         <form class="flex items-center w-[90%]">
             <label for="simple-search" class="sr-only">Search</label>
             <div class="relative w-full">
