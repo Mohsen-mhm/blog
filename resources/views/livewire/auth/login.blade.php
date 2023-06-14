@@ -13,28 +13,34 @@
                 <form class="space-y-4 md:space-y-6" wire:submit.prevent="login">
                     @csrf
                     <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">@lang('messages.email')</label>
+                        <label for="email"
+                               class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">@lang('messages.email')</label>
                         <input type="email" name="email" id="email" value="{{ old('email') }}"
                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-purple-600 focus:border-purple-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('user.email') bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400 @enderror"
                                placeholder="name@company.com" wire:model.debounce.750ms="user.email" required>
-                        @error('user.email') <span class="mt-2 text-sm text-red-600 dark:text-red-500">{{ $message }}</span> @enderror
+                        @error('user.email') <span
+                            class="mt-2 text-sm text-red-600 dark:text-red-500">{{ $message }}</span> @enderror
                     </div>
                     <div>
-                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">@lang('messages.password')</label>
+                        <label for="password"
+                               class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">@lang('messages.password')</label>
                         <input type="password" name="password" id="password" placeholder="••••••••"
                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-purple-600 focus:border-purple-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('user.password') bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400 @enderror"
                                wire:model.debounce.750ms="user.password" required>
-                        @error('user.password') <span class="mt-2 text-sm text-red-600 dark:text-red-500">{{ $message }}</span> @enderror
+                        @error('user.password') <span
+                            class="mt-2 text-sm text-red-600 dark:text-red-500">{{ $message }}</span> @enderror
                     </div>
                     <div class="flex items-center justify-between">
                         <div class="flex items-start">
                             <div class="flex items-center h-5">
-                                <input id="remember" aria-describedby="remember" type="checkbox" name="remember" wire:model.debounce.750ms="user.remember"
+                                <input id="remember" aria-describedby="remember" type="checkbox" name="remember"
+                                       wire:model.debounce.750ms="user.remember"
                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-purple-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-purple-600 dark:ring-offset-gray-800"
                                     {{ old('remember') ? 'checked' : '' }}>
                             </div>
                             <div class="ml-2 mr-2 text-sm">
-                                <label for="remember" class="text-gray-500 dark:text-gray-300">@lang('messages.remember')</label>
+                                <label for="remember"
+                                       class="text-gray-500 dark:text-gray-300">@lang('messages.remember')</label>
                             </div>
                         </div>
                     </div>
@@ -45,7 +51,7 @@
                     @if(\Illuminate\Support\Facades\Route::has('register'))
                         <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                             @lang('messages.dont.have.account') <a href="{{ route('register', app()->getLocale()) }}"
-                                                          class="font-medium text-purple-600 hover:underline dark:text-purple-500">@lang('messages.register')</a>
+                                                                   class="font-medium text-purple-600 hover:underline dark:text-purple-500">@lang('messages.register')</a>
                         </p>
                     @endif
                 </form>
