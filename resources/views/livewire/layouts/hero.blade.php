@@ -5,19 +5,19 @@
             <a href="#" class="relative text-center transition">
                 <img class="rounded-3xl transition" src="/images/img.png" alt="post image"/>
                 <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-800 hover:to-gray-900 dark:to-gray-400 dark:hover:to-gray-300 transition rounded-2xl"></div>
-                <div class="px-5 pb-5 absolute" style="transform: translateY(-100px)">
+                <div class="px-5 pb-5 absolute" style="transform: translateY(-120px)">
                     <a href="#">
-                        <h5 class="text-lg font-semibold tracking-tight truncate text-white dark:text-gray-900">Apple Watch
+                        <h5 class="text-sm lg:text-lg font-semibold tracking-tight max-w-[250px] min-w-[150px] text-white dark:text-gray-900">Apple Watch
                             Series 7 GPS, Aluminium Case, Starlight Sport</h5>
                     </a>
-                    <div class="flex items-center justify-between mt-3">
+                    <div class="flex items-center justify-between mt-2">
                         <span class="text-lg font-bold text-white dark:text-gray-900"><i class="fa-solid fa-tag fa-lg text-yellow-300 mx-2"></i>$599</span>
                     </div>
                 </div>
             </a>
         </div>
         <div
-            class="mr-auto place-self-center lg:col-span-5 md:w-full md:flex md:flex-col md:justify-center md:items-center sm:w-full sm:flex sm:flex-col sm:justify-center sm:items-center mt-5 lg:mt-0">
+            class="mr-auto place-self-center lg:col-span-5 w-full flex flex-col justify-center items-center mt-5 lg:mt-0">
             <p class="mb-3 text-sm font-normal text-gray-500 lg:text-lg dark:text-gray-400">@lang('messages.newsletters')</p>
             <div class="flex justify-center align-center items-center text-center">
                 <i class="fa-solid fa-arrow-down mx-2 fa-lg text-purple-700 pb-2"></i>
