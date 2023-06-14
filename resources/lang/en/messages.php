@@ -20,4 +20,5 @@ return [
     "accept.terms" => "I accept the Terms and Conditions",
     "newsletters" => "Find out about the latest posts and changes",
     "newsletters.join" => "Subscribe to the site's newsletter",
+    "search.learn.asan" => "Search in Learn Asan blog...",
 ];
