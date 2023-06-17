@@ -9,7 +9,6 @@
                     About
                 </button>
             </li>
-            
             <li class="mr-2">
                 <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services"
                         aria-selected="false"
@@ -17,7 +16,6 @@
                     Services
                 </button>
             </li>
-
             <li class="mr-2">
                 <button id="statistics-tab" data-tabs-target="#statistics" type="button" role="tab"
                         aria-controls="statistics" aria-selected="false"
