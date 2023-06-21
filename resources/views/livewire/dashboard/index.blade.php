@@ -9,6 +9,7 @@
                     About
                 </button>
             </li>
+
             <li class="mr-2">
                 <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services"
                         aria-selected="false"
@@ -16,6 +17,7 @@
                     Services
                 </button>
             </li>
+
             <li class="mr-2">
                 <button id="statistics-tab" data-tabs-target="#statistics" type="button" role="tab"
                         aria-controls="statistics" aria-selected="false"
@@ -23,6 +25,7 @@
                     Facts
                 </button>
             </li>
+
         </ul>
         <div id="defaultTabContent">
             <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel"
