@@ -109,7 +109,6 @@
                         <dt class="mb-2 text-3xl font-extrabold">1000s</dt>
                         <dd class="text-gray-500 dark:text-gray-400">Open source projects</dd>
                     </div>
-
                 </dl>
             </div>
         </div>
