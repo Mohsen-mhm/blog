@@ -30,6 +30,7 @@
                         @error('user.password') <span
                             class="mt-2 text-sm text-red-600 dark:text-red-500">{{ $message }}</span> @enderror
                     </div>
+                    
                     <div class="flex items-center justify-between">
                         <div class="flex items-start">
                             <div class="flex items-center h-5">
